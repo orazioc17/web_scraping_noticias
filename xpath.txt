@@ -1,0 +1,12 @@
+Analisis inicial, pero tuvo que ser modificado en el proyecto
+
+Links= $x('//div[@class="V_Title"]/h2/a/@href').map(x=>x.value)
+$x('//h2[@class="headline"]/a/@href').map(x=>x.value)
+$x('//div[@class="container"]/div/div/div/div[@class="col-7 pl-0 pr-3"]/a/@href').map(x=>x.value)
+$x('//div[@class="news V_Title_Img"]/a/@href').map(x=>x.value)
+$x('//div[@class="V_Trends"]/a/@href').map(x=>x.value)
+
+
+Titulo= $x('//div[@class="mb-auto"]/h2/span/text()').map(x=>x.wholeText)
+Resumen= $x('//div[@class="lead"]/p/text()').map(x=>x.wholeText)
+Cuerpo=$x('//div[@class="html-content"]/p[not(@class)]/text()').map(x=>x.wholeText)
